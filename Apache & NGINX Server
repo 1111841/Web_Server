@@ -1,0 +1,18 @@
+Apache (HTTPD Server):
+Aapache is a webserver which serve web pages.
+for Aapche port no 80 is required.
+Apache are often used as 7 layer load balancers, operating the specifying HTTP layer.
+In Apache server, we can make virtual hosts and serve multiple application/website at same time.
+
+Advantages of HTTPD Server:
+a) Load Balancing
+b) Security
+c) Caching  -> when we serve same static content multiple contents it makes caching of these content.
+d) Compression  -> It also reduce network throughput
+e) SSL Connection -> It allow server on a private network to communicate inplian text. which can dramatically speed up application.
+
+
+NGINX Server:
+nginx [engine x] is an HTTP and reverse proxy server, a mail proxy server, and a generic TCP/UDP proxy server, originally written by Igor Sysoev.
+NGINX is also a webserver which server web pages.
+
