@@ -1,0 +1,56 @@
+What is Heroku?
+Heroku is a platform as a service that enables developers to build,run and operate applications entirely in the cloud.
+
+Is Heroku like AWS?
+Heroku is a container-based cloud platform offering (PaaS), whereas AWS is a secure cloud services platform providing IaaS, PaaS, SaaS.
+Heorku offers you a ready to use environment that allows you to deploy your code fast, where as deployment service of aws is quite complicated.
+Heroku is a polygot platform. It lets the developer build,run and scale applications in a similar manner across all programming Languages.
+
+Is Heroku like Docker?
+Both Docker vs Heroku enable developers to create, deploy, and operate apps within containers. Docker vs Heroku may have similar principles, but they are not the same: Docker is an open-source software program, whereas Heroku is a commercialized service provider.
+
+
+Advantages of Heroku:
+Heroku provides high flexibility that supports unique workflow needs for DevOps.
+By using Heroku Developers focus on core rather thamm infrastructure.
+Heroku offers no downtime during system updates.
+It can be easily integrated with AWS products.
+
+
+Disadvantages of Heroku:
+It is not best suited for heavy computing objects.
+Limited instances with high inbound and outbound latency.
+It is expensive for apps that have high traffic on them.
+No other service can be run on dynos.
+
+
+
+Heroku port no local 5001
+
+How do I change the local port in heroku?
+To use a different port, use the -p flag: heroku local -p 7000 . If you don't specify a port, 5000 is used.
+
+What is heroku port number?
+Heroku expects a web application to bind its HTTP server to the port defined by the $PORT environment variable. Many frameworks default to port 8080, but can be configured to use an environment variable instead.
+
+
+Create an application on Heroku:
+Create a new directory and initialise a Git repository
+Login to the Heroku CLI and create a new project
+Initialise a new npm project and install Express.js
+Edit the contents of app.js
+Edit the static HTML, CSS and JavaScript files
+Create a Procfile
+Add and commit to Git, then push to your Heroku master branch
+
+
+Things to check if your app is not working
+Sometimes, despite best intentions, tutorials on the Internet don't work exactly as you expected.
+
+The steps below should help debug some common errors you might encounter:
+
+Did you initialise a Git repo in your project folder? Check if you ran git init earlier. Heroku relies on Git to deploy code from your local machine.
+Did you create a package.json file? Check if you ran npm init -y earlier. Heroku requires a package.json file to recognise this is a Node.js project.
+Is the server running? Make sure your Procfile uses the correct file name to start the server. Check you have web: node app.js and not web: node index.js.
+Does Heroku know which port to listen on? Check you used app.listen(process.env.PORT || 3000) in your app.js file.
+Do your static files have any errors in them? Check them by running locally and seeing if there are any bugs.
